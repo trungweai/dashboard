@@ -80,25 +80,25 @@
     <div class="container-fluid">
         <!-- Card number-->
         <div class="row">
-            <div class="col card">
+            <div class="col-md card">
                 <div class="card-body">
                     <h5 class="card-title">Tổng số user</h5>
                     <h3>5808</h3>
                 </div>
             </div>
-            <div class="col card">
+            <div class="col-md card">
                 <div class="card-body">
                     <h5 class="card-title">Runrate total</h5>
                     <h3>3%</h3>
                 </div>
             </div>
-            <div class="col card">
+            <div class="col-md card">
                 <div class="card-body">
                     <h5 class="card-title">Runrate active user</h5>
                     <h3>0.6%</h3>
                 </div>
             </div>
-            <div class="col card">
+            <div class="col-md card">
                 <div class="card-body">
                     <h5 class="card-title">Runrate new user</h5>
                     <h3>1.8%</h3>
@@ -108,13 +108,13 @@
     
         <!-- Chart-->
         <div class="row" id="div-chart">
-            <div class="col">
+            <div class="col-md">
                 <div id="chart3"></div>
             </div>
-            <div class="col">
+            <div class="col-md">
                 <div id="chart2"></div>
             </div>
-            <div class="col">
+            <div class="col-md">
                 <div id="chart1"></div>
             </div>
         </div>
@@ -239,8 +239,10 @@
             chart3.render();
 
             var absoluteDivHeight = $(".canvasjs-chart-canvas").height();
-            var blankDiv = $("#div-chart").height();
-            $("#div-chart").height(absoluteDivHeight+50)
+            var blankDiv = $("#chart1").height();
+            $("#chart1").height(absoluteDivHeight+80);
+            $("#chart2").height(absoluteDivHeight+80);
+            $("#chart3").height(absoluteDivHeight+80);
             console.log(absoluteDivHeight,blankDiv)
             }
 
